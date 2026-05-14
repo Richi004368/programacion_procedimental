@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor del formulario */
+body > div,
+form {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+.label {
+  color: #1e3c72;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.input,
+.select select {
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  transition: all 0.3s ease;
+}
+
+/* Efecto focus */
+.input:focus,
+.select select:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.4);
+}
+
+/* Íconos */
+.icon {
+  color: #2a5298;
+}
+
+/* Checkbox y radios */
+.checkbox,
+.radio {
+  color: #444;
+  font-size: 15px;
+}
+
+/* Botones */
+.button {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+/* Botón principal */
+.button.is-link {
+  background: #2a5298;
+  border: none;
+}
+
+.button.is-link:hover {
+  background: #1e3c72;
+  transform: scale(1.05);
+}
+
+/* Botón cancelar */
+.button.is-light:hover {
+  background: #dcdcdc;
+}
+
+/* Botón volver */
+.button.is-dark {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.button.is-dark:hover {
+  background: #111;
+  transform: scale(1.03);
+}
+
+/* Separación entre campos */
+.field {
+  margin-bottom: 20px;
+}
+
+/* Mensajes de ayuda */
+.help.is-danger {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  body > div,
+  form {
+    padding: 25px;
+  }
+}
