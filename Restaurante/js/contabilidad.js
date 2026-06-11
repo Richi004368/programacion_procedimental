@@ -5,3 +5,23 @@ let egresos = document.getElementById("egresos").value;
 let concepto = document.getElementById("concepto").value;
 let valor = document.getElementById("valor").value;
 
+function validarContabilidad() {
+    if (ventas === "" || fecha === "" || ingresos === "" || egresos === "" || Concepto === "" || Valor === "") {
+        console.log("Todos los campos son obligatorios. Por favor, completa el formulario.");
+    } 
+    else {
+        if (!soloNumeros.test(ventas)) {
+            console.log("El campo Ventas no puede contener letras ni caracteres especiales.");
+        }
+        else if (!soloNumeros.test(ingresos)) {
+            console.log("El campo Ingresos no puede contener letras.");
+        }
+        else if (!soloNumeros.test(egresos)) {
+            console.log("El campo Egresos no puede contener letras.");
+        }
+        else if (!soloNumeros.test(Valor)) {
+            console.log("El campo Valor no puede contener letras.");
+        }
+    }
+}
+
